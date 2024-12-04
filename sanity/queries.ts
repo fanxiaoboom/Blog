@@ -4,6 +4,7 @@ import { getDate } from '~/lib/date'
 import { client } from '~/sanity/lib/client'
 import { type Post, type PostDetail } from '~/sanity/schemas/post'
 import { type Project } from '~/sanity/schemas/project'
+import { vercelStegaCleanAll as stegaClean } from '@sanity/client/stega'
 
 export const getAllLatestBlogPostSlugsQuery = () =>
   groq`
