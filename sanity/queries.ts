@@ -102,14 +102,14 @@ export const getBlogPost = (slug: string) =>
 export const getSettingsQuery = () =>
   groq`
   *[_type == "settings"][0] {
-    "projects": projects[]->{
+    "projects": coalesce(projects, [])[]->{
       _id,
       name,
       url,
       description,
       icon
     },
-    "heroPhotos": heroPhotos[].asset->url,
+    "heroPhotos": coalesce(heroPhotos, [])[].asset->url,
     "resume": resume[]{
       company,
       title,
