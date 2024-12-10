@@ -1,12 +1,13 @@
+/*
 import Image from 'next/image'
 import Balancer from 'react-wrap-balancer'
 
 import { RichLink } from '~/components/links/RichLink'
 import { Container } from '~/components/ui/Container'
 
-import AlipayQR from './alipay-qr.jpg'
-import ThankYouLetterScreenshot1 from './Arc aagD26w9@2x.png'
-import ThankYouLetterScreenshot2 from './Arc ynleUdHy@2x.png'
+//import AlipayQR from './alipay-qr.jpg'
+//import ThankYouLetterScreenshot1 from './Arc aagD26w9@2x.png'
+//import ThankYouLetterScreenshot2 from './Arc ynleUdHy@2x.png'
 
 const title = 'AMA 一对一咨询'
 const description =
@@ -128,3 +129,4 @@ export default function AskMeAnythingPage() {
     </Container>
   )
 }
+*/
