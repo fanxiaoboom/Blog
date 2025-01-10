@@ -6,7 +6,7 @@ import { getSettings } from '~/sanity/queries'
 
 const title = '我的项目'
 const description =
-  '多年来，我一直在做各种各样的小项目，这里就是我筛选出来我觉得还不错的项目合集，也是我在技术领域中尝试和探索的最好见证。'
+  '看看这么些时日来，我都捣鼓过什么东西吧'
 export const metadata = {
   title,
   description,
