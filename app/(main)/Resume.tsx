@@ -11,7 +11,11 @@ type Resume = {
   logo: string
 }
 
-export function Resume({ resume }: { resume: Resume[] }) {
+export function Resume({ resume }: { resume?: Resume[] | null }) {
+  if (!resume?.length) {
+    return null
+  }
+
   return (
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
       <h2 className="flex items-center text-sm font-semibold text-zinc-900 dark:text-zinc-100">

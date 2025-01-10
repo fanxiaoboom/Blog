@@ -122,13 +122,15 @@ export const getSettings = () =>
   client.fetch<{
     projects: Project[] | null
     heroPhotos?: string[] | null
-    resume?:
-      | {
-          company: string
-          title: string
-          logo: string
-          start: string
-          end?: string
-        }[]
-      | null
-  }>(getSettingsQuery())
+    resume?: {
+      company: string
+      title: string
+      logo: string
+      start: string
+      end?: string
+    }[] | null
+  }>(getSettingsQuery()).then((data) => ({
+    projects: data?.projects || [],
+    heroPhotos: data?.heroPhotos || [],
+    resume: data?.resume || []
+  }))
